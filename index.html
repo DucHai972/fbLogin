@@ -33,10 +33,10 @@ h5{
 
 
 .login-form-wrap {
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
   width: 450px;
-  height: 300px;
+  height: 350px;
   margin: 0px auto;
   padding: 50px 30px 0 30px;
   text-align: center;
@@ -98,18 +98,40 @@ h5{
   margin: 20px auto 0 auto;
   width: 100%;
   border: none;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 8px;
   font-size: 17px;
   font-weight: 700;
 }
+
+#signup {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background: rgba(0,164,0,255);
+  cursor: pointer;
+  background-color: rgba(0,164,0,255);
+  color: rgba(245,248,253,255);
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 45%;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#signup:hover  {
+  background-color: rgba(54,164,32,255);
+}
+
 .login-form input[type="submit"]:hover {
-  background: #DDD;
+  background: rgba(22,111,229,255);
 }
 .login-form input[type="submit"]:active {
   padding-top: 9px;
   padding-bottom: 7px;
-  background: #C9C9C9;
+  background: rgba(22,111,229,255);
 }
 
 img  {
@@ -125,13 +147,15 @@ img  {
 
 #warning  {
   position: absolute;
+  font-family: 'Montserrat', sans-serif;
   top: 0;
   left: 0;
   width: 100%;
   color: white;
   background-color: rgba(250,62,62,255);
-  height: 25px;
+  height: 30px;
   padding-left: 20px;
+  padding-top: 5px;
   letter-spacing: 1.5px;
 }
 @media only screen and (max-width: 770px) {
@@ -139,9 +163,28 @@ img  {
   .login-form-wrap  {
     width: 100vw;
   }
+
+  #signup  {
+    width: 60%;
+  }
 }
 
+.languages  {
+  font-size: 13px;
+  color: gray;
+}
 
+.language1  {
+  position: relative;
+  bottom: -20vh;
+  right: 40%;
+}
+
+.language2  {
+  position: relative;
+  bottom: -3vh;
+  left: 40%;
+}
 </style>
 </head>
 <body>
@@ -149,7 +192,7 @@ img  {
   <h1 class="w3-xlarge"></h1>
   <h1></h1>
 </header>
-<div id="warning">Bạn  cần  <strong> đăng nhập </strong> để  tiếp  tục</div>
+<div id="warning">Bạn cần đăng nhập để tiếp tục</div>
 <div class="logo">
   <a class="logo" href="">
     <img id="Fblogo" src="./fbLogo.jpg">
@@ -165,8 +208,19 @@ img  {
     <label>
       <input type="password" name="pass" placeholder="Password" required>
     </label>
-    <input type="submit" value="Login">
+    <input type="submit" value="Đăng nhập">
   </form>
+  <p>Hoặc</p>
+  <a href="" style="text-decoration: none;"><input id="signup" type="submit" value="Tạo tài khoản mới"></a>
+  <div class="languages">
+    <p class="language1">English (UK)</p>
+    <p class="language1">অসমীয়া</p>
+    <p class="language1">नेपाली</p>
+    <p class="language1">Português (Brasil)</p>
+    <p class="language2">বাংলা</p>
+    <p class="language2">हिन्दी</p>
+    <p class="language2">Español</p>
+  </div>
   <h5>Sign in to complete poll.</h5>
 </section>
 </body>
