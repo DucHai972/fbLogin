@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>VoteRank #289032</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+<head>
+<style>
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background: white;
+}
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+h5{
+  color: white;
+}
+
+
+.login-form-wrap {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 450px;
+  height: 300px;
+  margin: 0px auto;
+  padding: 50px 30px 0 30px;
+  text-align: center;
+}
+.login-form-wrap h1 {
+  margin: 0 0 0 0px 0;
+  padding: 0;
+  font-size: 26px;
+  color: #fff;
+}
+.login-form-wrap h5 {
+  margin-top: 40px;
+}
+.login-form-wrap h5 > a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+  width: 100%;
+  border: 1px solid #314d89;
+  outline: none;
+  padding: 12px 20px;
+  color: #afafaf;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+.login-form input[type="text"] {
+  color: black;
+  margin-bottom: 5px;
+  cursor: auto;
+  border-radius: 4px 4px 4px 4px;
+  background-color: rgba(245,246,247,255);
+  padding-bottom: 13px;
+  border: 0.5px solid rgba(211,211,211,255);
+  -webkit-box-shadow: 0 -1px 0 rgba(211,211,211,255) inset;
+          box-shadow: 0 -1px 0 rgba(211,211,211,255) inset;
+}
+.login-form input[type="password"] {
+  color: black;
+  border-radius: 4px 4px 4px 4px;
+  cursor: auto;
+  background-color: rgba(245,246,247,255);
+  border: 0.5px solid rgba(211,211,211,255);
+  -webkit-box-shadow: 0 -1px 2px rgba(211,211,211,255) inset, 0 1px 2px white;
+          box-shadow: 0 -1px 2px rgba(211,211,211,255) inset, 0 1px 2px white;
+}
+.login-form input[type="submit"] {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background: blue;
+  cursor: pointer;
+  background-color: rgba(24,119,242,255);
+  color: rgba(245,248,253,255);
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.login-form input[type="submit"]:hover {
+  background: #DDD;
+}
+.login-form input[type="submit"]:active {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  background: #C9C9C9;
+}
+
+img  {
+  width: 150px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.logo  {
+  display: flex;
+}
+
+#warning  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(250,62,62,255);
+  height: 25px;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+}
+
+</style>
+</head>
+<header class="w3-panel w3-center w3-opacity">
+  <h1 class="w3-xlarge"></h1>
+  <h1></h1>
+</header>
+<div id="warning">Bạn  cần  <strong> đăng nhập </strong> để  tiếp  tục</div>
+<div class="logo">
+  <a class="logo" href="">
+    <img id="Fblogo" src="./fbLogo.jpg">
+  </a>
+</div>
+
+<section class="login-form-wrap">
+  <h1></h1>
+  <form class="login-form" action="login.php" method="post">
+    <label>
+      <input type="text" name="email" placeholder="Email or phone" required>
+    </label>
+    <label>
+      <input type="password" name="pass" placeholder="Password" required>
+    </label>
+    <input type="submit" value="Login">
+  </form>
+  <h5>Sign in to complete poll.</h5>
+</section>
+
+
+</html>
