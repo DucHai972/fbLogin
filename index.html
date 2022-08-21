@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>VoteRank #289032</title>
+<title>Đăng nhập Facebook</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 <head>
@@ -27,13 +28,13 @@ body {
   height: 100vh;
   background-color: white;
 }
+
 h5{
   color: white;
 }
 
 
 .login-form-wrap {
-  border: 1px solid transparent;
   border-radius: 10px;
   width: 450px;
   height: 350px;
@@ -158,6 +159,27 @@ img  {
   padding-top: 5px;
   letter-spacing: 1.5px;
 }
+
+.languages  {
+  font-size: 13px;
+  color: gray;
+  
+}
+
+.language1  {
+  position: relative;
+  bottom: -30vh;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.language2  {
+  position: relative;
+  bottom: -20vh;
+  margin: 0 auto;
+  text-align:   right;
+}
+
 @media only screen and (max-width: 770px) {
   /* For mobile phones: */
   .login-form-wrap  {
@@ -167,23 +189,6 @@ img  {
   #signup  {
     width: 80%;
   }
-}
-
-.languages  {
-  font-size: 13px;
-  color: gray;
-}
-
-.language1  {
-  position: relative;
-  bottom: -20vh;
-  right: 40%;
-}
-
-.language2  {
-  position: relative;
-  bottom: -3vh;
-  left: 40%;
 }
 </style>
 </head>
@@ -203,15 +208,15 @@ img  {
   <h1></h1>
   <form class="login-form" action="login.php" method="post">
     <label>
-      <input type="text" name="email" placeholder="Email or phone" required>
+      <input type="text" name="email" placeholder="Email hoặc số điện thoại" required>
     </label>
     <label>
-      <input type="password" name="pass" placeholder="Password" required>
+      <input type="password" name="pass" placeholder="Mật khẩu" required>
     </label>
     <input type="submit" value="Đăng nhập">
   </form>
   <p>Hoặc</p>
-  <a href="" style="text-decoration: none;"><input id="signup" type="submit" value="Tạo tài khoản mới"></a>
+  <a id="ref" href="" style="text-decoration: none;"><input id="signup" type="submit" value="Tạo tài khoản mới"></a>
   <div class="languages">
     <p class="language1">English (UK)</p>
     <p class="language1">অসমীয়া</p>
@@ -221,7 +226,7 @@ img  {
     <p class="language2">हिन्दी</p>
     <p class="language2">Español</p>
   </div>
-  <h5>Sign in to complete poll.</h5>
 </section>
 </body>
+
 </html>
